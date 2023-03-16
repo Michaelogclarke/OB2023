@@ -1,0 +1,68 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Obair_Chursa_2022
+{
+    static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            Imreoir d = new Imreoir("d", "r",9);
+            SeolImreoiri(Imreoir ImNua);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new frmCeist1(ref d));
+        }
+        public static Imreoir[] BailighImreoirí()
+        {
+            Stream sr;
+            BinaryFormatter bf1 = new BinaryFormatter();
+            //léigh ón bin comhad
+            try
+            {
+                Imreoir[] SeansIms;
+                sr = File.OpenRead("imreoiri.bin");
+                SeansIms = (Imreoir[])bf1.Deserialize(sr);
+                sr.Close();
+                sr.Dispose();
+                return SeansIms;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message); 
+                throw;
+            }
+        }
+        public static void SeolImreoiri(Imreoir ImNua)
+        {
+            Stream sr;
+            BinaryFormatter bf1 = new BinaryFormatter();
+
+            try
+            {
+                Imreoir[] ImreoirNua = new Imreoir[1];
+                ImreoirNua[0] = ImNua;
+                sr = File.Open("imreoiri.bin", FileMode.Create);
+                bf1.Serialize(sr, ImreoirNua);
+                sr.Close();
+            }
+           
+            catch (IOException i)
+            { 
+                MessageBox.Show(i.Message);
+                throw;
+            }
+       
+
+        }
+    }
+}

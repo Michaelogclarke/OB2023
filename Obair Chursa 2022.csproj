@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A1EA6BE-E896-4CE5-8A8B-C13102EDBA89}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Obair_Chursa_2022</RootNamespace>
+    <AssemblyName>Obair Chursa 2022</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCeist1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCeist1.Designer.cs">
+      <DependentUpon>frmCeist1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCeist10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCeist10.Designer.cs">
+      <DependentUpon>frmCeist10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCeist2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCeist2.Designer.cs">
+      <DependentUpon>frmCeist2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCeist3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCeist3.Designer.cs">
+      <DependentUpon>frmCeist3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCeist4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCeist4.Designer.cs">
+      <DependentUpon>frmCeist4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCeist5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCeist5.Designer.cs">
+      <DependentUpon>frmCeist5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCeist6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCeist6.Designer.cs">
+      <DependentUpon>frmCeist6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCeist7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCeist7.Designer.cs">
+      <DependentUpon>frmCeist7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCeist8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCeist8.Designer.cs">
+      <DependentUpon>frmCeist8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCeist9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCeist9.Designer.cs">
+      <DependentUpon>frmCeist9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClarNagCinnri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClarNagCinnri.Designer.cs">
+      <DependentUpon>frmClarNagCinnri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashScreen.Designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help 3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help 3.Designer.cs">
+      <DependentUpon>Help 3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help 4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help 4.Designer.cs">
+      <DependentUpon>Help 4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help 5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help 5.Designer.cs">
+      <DependentUpon>help 5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help 6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help 6.Designer.cs">
+      <DependentUpon>help 6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help 7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help 7.Designer.cs">
+      <DependentUpon>help 7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help2.Designer.cs">
+      <DependentUpon>Help2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help8.Designer.cs">
+      <DependentUpon>help8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help1.Designer.cs">
+      <DependentUpon>Help1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help9.Designer.cs">
+      <DependentUpon>help9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imreoir.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCeist1.resx">
+      <DependentUpon>frmCeist1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCeist10.resx">
+      <DependentUpon>frmCeist10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCeist2.resx">
+      <DependentUpon>frmCeist2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCeist3.resx">
+      <DependentUpon>frmCeist3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCeist4.resx">
+      <DependentUpon>frmCeist4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCeist5.resx">
+      <DependentUpon>frmCeist5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCeist6.resx">
+      <DependentUpon>frmCeist6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCeist7.resx">
+      <DependentUpon>frmCeist7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCeist8.resx">
+      <DependentUpon>frmCeist8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCeist9.resx">
+      <DependentUpon>frmCeist9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClarNagCinnri.resx">
+      <DependentUpon>frmClarNagCinnri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help 3.resx">
+      <DependentUpon>Help 3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help 4.resx">
+      <DependentUpon>Help 4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help 5.resx">
+      <DependentUpon>help 5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help 6.resx">
+      <DependentUpon>help 6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help 7.resx">
+      <DependentUpon>help 7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help2.resx">
+      <DependentUpon>Help2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help8.resx">
+      <DependentUpon>help8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help1.resx">
+      <DependentUpon>Help1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help9.resx">
+      <DependentUpon>help9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spotify screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adele when she was 19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adele when she was 30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adele when she was 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adele when she was 25.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adele thumbs up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Happy ye.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad ye.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help 1.png" />
+    <None Include="Resources\help 2.png" />
+    <None Include="Resources\help 3.png" />
+    <None Include="Resources\help 4.png" />
+    <None Include="Resources\help 5.png" />
+    <None Include="Resources\help 6.png" />
+    <None Include="Resources\help 7.png" />
+    <Content Include="Resources\MF Doom.png" />
+    <Content Include="Resources\Sad joe.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
